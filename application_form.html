@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application_form</title>
+
+    <style>
+        form{
+            margin-left: 300px;
+            margin-right: 300px;
+            border: 3px solid rgb(14, 167, 14);
+            background-image: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        h1{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: green;
+            }
+            p{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: green;  
+            font-size: 20px;
+            }
+            div{
+                text-align: center; 
+            }
+            .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 300px;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px; 
+      border: none;
+      background: green; 
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      }
+      button:hover {
+      background:rgb(14, 167, 14);
+      }
+      input[type=text] {
+      height: 30px;
+      width: 300px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="testbox">
+        <form action="/">
+          <div class="banner">
+            <h1>Internship Application Form</h1>
+          </div>
+          <div class="item">
+            <p>Name</p>
+            <div class="name-item">
+              <input type="text" name="First" placeholder="First" /><br><br>
+              <input type="text" name="Last" placeholder="Last" />
+            </div>
+          </div>
+          <div class="item">
+            <p>Birth Date</p>
+            <input type="date" name="bdate" required/>
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+         
+          <div class="question">
+            <p>Any Experience?</p>
+            <div class="question-answer">
+              <input type="radio" value="none" id="radio_3" name="study"/>
+              <label for="radio_3" class="radio"><span>Yes</span></label>
+              <input type="radio" value="none" id="radio_4" name="study" />
+              <label for="radio_4" class="radio"><span>No</span></label>
+            </div>
+          </div>
+          <div class="question">
+            <p>Your Expertise</p>
+            <div class="question-answer">
+              <input type="checkbox" value="none" id="HTML" name="status"/>
+              <label class="checkbox"><span>HTML</span></label>
+              <input type="checkbox" value="none" id="CSS" name="status" />
+              <label class="checkbox"><span>CSS</span></label><br>
+              <input type="checkbox" value="none" id="Bootstrap" name="status" />
+              <label class="checkbox"><span>Bootstrap</span></label>
+              <input type="checkbox" value="none" id="Javascript" name="status" />
+              <label class="checkbox"><span>Javascript</span></label><br>
+              <input type="checkbox" value="none" id="JQuery" name="status" />
+              <label class="checkbox"><span>JQuery</span></label>
+              <input type="checkbox" value="none" id="React" name="status" />
+              <label class="checkbox"><span>React</span></label>
+            </div>
+          </div>
+          
+          <div class="item">
+            <p>Any Certificates?</p>
+            <textarea rows="3"></textarea>
+          </div>
+          <div class="item">
+            <p>Please describe yourself</p>
+            <textarea rows="3"></textarea>
+          </div>
+          <div class="item">
+            <p>Phone</p>
+            <input type="text" name="name"/>
+          </div>
+          <div class="item">
+            <p>Email</p>
+            <input type="text" name="name"/>
+          </div>
+          <div class="item">
+            <p>Address</p>
+            <input type="text" name="name" placeholder="Street address"/>
+            <input type="text" name="name" placeholder="Street address line 2"/><br>
+            <div class="city-item">
+              <input type="text" name="name" placeholder="City" />
+              <input type="text" name="name" placeholder="Region" /><br>
+              <input type="text" name="name" placeholder="Postal / Zip code" />
+              <select>
+                <option value="">Country</option>
+                <option value="1">Russia</option>
+                <option value="2">Germany</option>
+                <option value="3">France</option>
+                <option value="4" selected>Armenia</option>
+                <option value="5">USA</option>
+              </select>
+            </div>
+          </div>
+          <div class="question">
+            <p>High School</p>
+            <div class="question-answer">
+              <input type="radio" value="none" id="radio_9" name="school"/>
+              <label class="radio"><span>Yes</span></label>
+              <input type="radio" value="none" id="radio_10" name="school" />
+              <label class="radio"><span>No</span></label>
+            </div>
+          </div>
+          <div class="question">
+            <p>College</p>
+            <div class="question-answer">
+              <input type="radio" value="none" id="radio_11" name="college"/>
+              <label class="radio"><span>Yes</span></label>
+              <input type="radio" value="none" id="radio_12" name="college" />
+              <label class="radio"><span>No</span></label>
+            </div>
+          </div><br><br>
+          <div class="btn-block">
+            <button type="submit" href="/">Apply</button>
+          </div>
+        </form>
+      </div>
+    
+</body>
+</html>
