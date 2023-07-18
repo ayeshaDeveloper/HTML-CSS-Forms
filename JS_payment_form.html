@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript_Payement_Form</title>
+    <style>
+        form{
+            
+            margin-left:300px;
+            margin-right:300px;
+            border: 2px solid orange;
+            background-image: url(p3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        h1{
+            color: orange;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-size: 50px;
+          
+        }
+        p{
+            color:  orange;
+            font-family: 'Courier New', Courier, monospace;
+            text-align:center;
+            font-weight: bold;
+        }
+        input[type=text],[type=number]{
+               height: 30px;
+               width: 250px;
+               border-radius: 5px;
+               align-items: center;
+        }
+        button{
+            background-color:orange;
+            color:white;
+            height: 50px;
+               width: 250px;
+               border-radius: 5px;
+               font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <h1>Payment Form</h1><br>
+        <hr>
+        <br><br>
+        <p>
+        <label>FirstName:</label>
+        <input type="text" name="FirstName" id="FN"><br><br>
+        <label>LastName:</label>
+        <input type="text" name="LastName" id="LN"><br><br>
+        <label>CourseName:</label>
+        <input type="text" name="CourseName" id="CN"><br><br>
+        <label>CourseCode:</label>
+        <input type="number" name="CourseCode" id="CC"><br><br>
+        <label>CoursePrice:</label>
+        <input type="number" name="CoursePrice" id="CP"><br><br>
+        <label>Payment_Method:</label>
+        <input type="text" name="PaymentMethod" id="PM"><br><br>
+        <button>Submit</button>
+    </p>
+    </form>
+    <script>
+        let FirstName="Ayesha";
+        let LastName="Shabbir";
+        var CourseName="web development";
+        var CourseCode="wd3232";
+        const CoursePrice= 5400;
+        var isPaid= true;
+        var modeofPayment;
+        modeofPayment=prompt("mode of payment?");
+        alert(FirstName+ "Succesfully purchased" + CourseName + "using" + modeofPayment);
+
+    </script>
+</body>
+</html>
